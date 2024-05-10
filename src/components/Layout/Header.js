@@ -9,10 +9,10 @@ import {
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
-import ThemeContext from '@/app/context/themeContext'
+import ThemeContext from '@/context/themeContext'
 
 const navigation = [
-  { name: 'Home', href: '/' },
+  { name: 'LogIn', href: '/auth' },
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/services' },
   { name: 'Contact', href: '/contact' },
@@ -34,11 +34,11 @@ export default function Header() {
         <div className='flex lg:flex-1'>
           <a href='/' className='-m-1.5 p-1.5'>
             <span className='sr-only'>Your Company</span>
-            <Image
+            <img
               height={100}
               width={100}
               className='h-12 w-auto'
-              src='/logo.svg'
+              src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500'
               alt=''
             />
           </a>
