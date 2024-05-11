@@ -13,6 +13,18 @@ pnpm dev
 # or
 bun dev
 ```
+##Structure
+
+This app handles the frontend and backend from the same folder. All sanity related libraries are found in the only package.json file.
+Configuration is in sanity.config.js. 
+When reusing/cloning this project, make sure to use your own sanity project ID and dataset by modifying your environment variables in the .env file. 
+
+During development, Sanity Studio can be accessed running 
+```bash
+run npm run dev
+```
+and visiting http://localhost:3000/studio.
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

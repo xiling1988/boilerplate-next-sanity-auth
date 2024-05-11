@@ -5,10 +5,10 @@ import { schemaTypes } from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'deliveroo-course',
+  title: 'FullStack Next Sanity App',
 
-  projectId: '6td1fim8',
-  dataset: 'production',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   basePath: '/studio',
 
   plugins: [structureTool(), visionTool()],
